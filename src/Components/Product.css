@@ -1,0 +1,152 @@
+.product-page {
+    margin-top: 14rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    display: flex;
+    gap: 4rem;
+}
+
+.product-page-img {
+    display: flex;
+    gap: 2rem;
+}
+
+.main-img {
+    width: 30rem;
+    height: 30rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    animation: img-appears .2s linear;
+}
+
+@keyframes img-appears {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 100%;
+    }
+}
+
+.img-selector {
+    width: 5rem;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+.img-selector div {
+    width: 100%;
+    height: 5rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+
+.product-page-info {
+    right: 0;
+    width: 100%;
+}
+
+.pp-brand {
+    padding: 0;
+    margin: 0;
+    font-size: 1.5rem;
+}
+.pp-title {
+
+}
+
+.pp-attribute-selector {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.pp-color-selector {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.pp-color-selector .active {
+    box-shadow:
+        0 0 0 1px hsl(0, 0%, 100%),
+        0 0 0 2px hsl(136, 53%, 59%);
+}
+
+.pp-attribute-block {
+    border: 1px solid black;
+    padding: .5rem;
+    cursor: pointer;
+    background-color: white;
+}
+
+.pp-attribute-block:hover {
+    border: 1px solid grey;
+}
+
+.pp-attribute-block:active {
+    border: 1px solid black;
+    background-color: black;
+    color: white;
+}
+
+.pp-color-block {
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+    border: none;
+}
+
+.pp-color-block:hover {
+    box-shadow:
+        0 0 0 1px hsl(0, 0%, 100%),
+        0 0 0 2px hsl(136, 53%, 59%);
+}
+
+.pp-price {
+    margin-top: 3rem;
+    font-size: 1.5rem;
+}
+
+#pp-checkout-button, #pp-add-button {
+    width: 20rem;
+    height: fit-content;
+    padding: 1rem 0;
+    border: 0;
+    cursor: pointer;
+}
+
+
+#pp-add-button {
+    background-color: #5ECE7B;
+    color: white;
+}
+#pp-add-button:hover {
+    background-color: #73dd8f;
+}
+#pp-add-button:active {
+    background-color: #44b161;
+}
+
+#pp-out-of-stock {
+    width: 20rem;
+    border: 1px solid lightgrey;
+    background-color: rgb(230, 230, 230);
+    padding: 1rem 0;
+}
+
+.pp-description {
+    margin-top: 3rem;
+    font-size: .8rem;
+}
+
+.pp-attribute-selection .active {
+    background-color: black;
+    color: white;
+}
+
